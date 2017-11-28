@@ -121,7 +121,7 @@ var filter = curry(function(f, xs) {
   return xs.filter(f);
 });
 
-//  reduce :: (b -> a -> b) -> b -> [a] -> b
+//  reduce :: ((b, a) -> b) -> b -> [a] -> b
 var reduce = curry(function(f, x, xs) {
   return xs.reduce(f, x);
 });
